@@ -14,8 +14,15 @@ namespace WcfService1.DAO
         {
             //string conf = ConfigurationManager.ConnectionStrings["garderie.garderie.dbo"].ConnectionString.ToString();
             SqlConnection conn = new SqlConnection("Data Source=tcp:garderie.database.windows.net,1433;Initial Catalog=garderie;User Id=garderie_admin;Password=reallyStrongPwd123;Integrated Security=False;MultipleActiveResultSets=True;Encrypt=True;TrustServerCertificate=False");
-            
-            conn.Open();
+
+            try
+            {
+                conn.Open();
+            }catch(Exception e)
+            {
+
+            }
+
             SqlCommand cmd = new SqlCommand("SELECT * FROM CategoriesArticle", conn);
             SqlDataReader reader = cmd.ExecuteReader();
 
