@@ -1,0 +1,7 @@
+E:\PROGRAMMATION\Workspace Visual Studio\garderie_webService\WcfService1\obj\Debug\WcfService1.csprojAssemblyReference.cache
+E:\PROGRAMMATION\Workspace Visual Studio\garderie_webService\WcfService1\obj\Debug\WcfService1.csproj.CoreCompileInputs.cache
+E:\PROGRAMMATION\Workspace Visual Studio\garderie_webService\WcfService1\bin\WcfService1.dll.config
+E:\PROGRAMMATION\Workspace Visual Studio\garderie_webService\WcfService1\bin\WcfService1.dll
+E:\PROGRAMMATION\Workspace Visual Studio\garderie_webService\WcfService1\bin\WcfService1.pdb
+E:\PROGRAMMATION\Workspace Visual Studio\garderie_webService\WcfService1\obj\Debug\WcfService1.dll
+E:\PROGRAMMATION\Workspace Visual Studio\garderie_webService\WcfService1\obj\Debug\WcfService1.pdb
