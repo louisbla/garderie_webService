@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
+using WcfService1.Model;
 
 namespace WcfService1.DAO
 {
@@ -46,12 +47,12 @@ namespace WcfService1.DAO
                     g = reader.GetInt32(6);
                 }
                 catch { g = 0; }
-                int h;
+                Categorie h;
                 try
                 {
-                    h = reader.GetInt32(7);
+                    h = CategorieDAO.GetCategorieById(reader.GetInt32(7));
                 }
-                catch { h = 0; }
+                catch { h = null; }
 
                 Articles.Add(new Article((int)reader[0], reader[1].ToString(), (int)reader[2], reader[3].ToString(), reader[4].ToString(), f, g, h));
             }

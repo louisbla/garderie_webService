@@ -1,11 +1,12 @@
 ﻿using System.Runtime.Serialization;
+using WcfService1.Model;
 
 namespace WcfService1
 {
     [DataContract]
     public class Article
     {
-        public Article(int idArticle, string nom, int quantite, string Photo, string Description, int InventaireId, int EnfantInventaireId, int CategorieId)
+        public Article(int idArticle, string nom, int quantite, string Photo, string Description, int InventaireId, int EnfantInventaireId, Categorie Categorie)
         {
             this.idArticle = idArticle;
             this.nom = nom;
@@ -14,7 +15,7 @@ namespace WcfService1
             this.Description = Description;
             this.InventaireId = InventaireId;
             this.EnfantInventaireId = EnfantInventaireId;
-            this.CategorieId = CategorieId;
+            this.Categorie = Categorie;
         }
         public Article(int idArticle, string nom)
         {
@@ -37,6 +38,6 @@ namespace WcfService1
         [DataMember]
         public int EnfantInventaireId { get; set; }
         [DataMember]
-        public int CategorieId { get; set; }
+        public Categorie Categorie { get; set; }
     }
 }
