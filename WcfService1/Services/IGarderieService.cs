@@ -8,9 +8,9 @@ using WcfService1.Model;
 
 namespace WcfService1.Services
 {
-    // REMARQUE : vous pouvez utiliser la commande Renommer du menu Refactoriser pour changer le nom d'interface "ICategorieService" à la fois dans le code et le fichier de configuration.
+    // REMARQUE : vous pouvez utiliser la commande Renommer du menu Refactoriser pour changer le nom d'interface "IGarderieService" à la fois dans le code et le fichier de configuration.
     [ServiceContract]
-    public interface ICategorieService
+    public interface IGarderieService
     {
         [OperationContract]
         Categorie GetCategorieById(int idCategorie);
@@ -20,6 +20,13 @@ namespace WcfService1.Services
 
         [OperationContract]
         Categorie GetCategorieByName(string name);
+        [OperationContract]
+        Article GetArticleById(int idArticle);
 
+        [OperationContract]
+        List<Article> GetAllArticles();
+
+        [OperationContract]
+        Article GetArticleByName(string name);
     }
 }

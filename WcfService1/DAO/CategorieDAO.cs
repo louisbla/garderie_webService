@@ -23,7 +23,7 @@ namespace WcfService1.DAO
 
             }
 
-            SqlCommand cmd = new SqlCommand("SELECT * FROM CategoriesArticle", conn);
+            SqlCommand cmd = new SqlCommand("SELECT * FROM CategoriesArticle WHERE visible = 1", conn);
             SqlDataReader reader = cmd.ExecuteReader();
 
             ICollection<Categorie> categories = new List<Categorie>();
